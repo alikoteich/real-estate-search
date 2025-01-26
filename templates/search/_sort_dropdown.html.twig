@@ -1,0 +1,7 @@
+<select name="sort" class="form-select form-select-lg" style="max-width: 250px;">
+    <option value="">Sort by...</option>
+    <option value="min_price" {{ app.request.query.get('sort') == 'min_price' ? 'selected' }}>Min Price</option>
+    <option value="max_price" {{ app.request.query.get('sort') == 'max_price' ? 'selected' }}>Max Price</option>
+    <option value="min_bedrooms" {{ app.request.query.get('sort') == 'min_bedrooms' ? 'selected' }}>Min Bedrooms</option>
+    <option value="max_bedrooms" {{ app.request.query.get('sort') == 'max_bedrooms' ? 'selected' }}>Max Bedrooms</option>
+</select>

@@ -1,0 +1,22 @@
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead class="table-dark">
+            <tr>
+                <th>Type</th>
+                <th>Bedrooms</th>
+                <th>Price</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for property in properties %}
+                <tr>
+                    <td>{{ property.type|capitalize }}</td>
+                    <td>{{ property.bedrooms }}</td>
+                    <td>${{ property.price|number_format }}</td>
+                    <td>{{ property.location }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
