@@ -3,7 +3,7 @@
         <input type="text" name="query" class="form-control form-control-lg" placeholder="Example: '3-bedroom house under $500k in Paris'" value="{{ query }}" aria-label="Search properties">
 
         <select name="filter" class="form-select form-select-lg">
-            <option value="">Default</option>
+            <option value="">--Select Filter--</option>
             <option value="min_price" {{ selectedFilter == 'min_price' ? 'selected' }}>Minimum Price</option>
             <option value="max_price" {{ selectedFilter == 'max_price' ? 'selected' }}>Maximum Price</option>
             <option value="min_bedrooms" {{ selectedFilter == 'min_bedrooms' ? 'selected' }}>Minimum Bedrooms</option>

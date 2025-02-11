@@ -5,7 +5,7 @@ namespace App\Service;
 class PropertyQueryParser
 {
     private const PROPERTY_SYNONYMS = [
-        'flat' => 'apartment',  // Map flat → apartment
+        'flat' => 'apartment',  
         'condo' => 'apartment',
         'studio' => 'apartment',
         'villa' => 'house',
@@ -28,7 +28,7 @@ class PropertyQueryParser
             $criteria['type'] = self::PROPERTY_SYNONYMS[$matchedType] ?? $matchedType;
         }
 
-        // Extract bedrooms (e.g., "3-bedroom", "2 br")
+        // Extract bedrooms (e.g., "3-bedroom")
         preg_match('/(\d+)\s*-?\s*(?:bedroom|bedrooms?)\b/i', $query, $bedMatches);
         if (!empty($bedMatches)) {
             $criteria['bedrooms'] = (int)$bedMatches[1];

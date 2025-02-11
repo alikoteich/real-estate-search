@@ -87,7 +87,6 @@ class RecommendationService
 
     private function getNearbyCities(string $location): array
     {
-        // Define nearby cities (e.g., Paris → Lyon, Marseille)
         $nearbyMap = [
             'Paris' => ['Lyon', 'Marseille'],
             'New York' => ['Boston', 'Philadelphia'],
