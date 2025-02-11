@@ -30,6 +30,7 @@ A modern, responsive web application for searching and filtering properties base
     │ └── Repository/
     │ └── PropertyRepository.php
     │ ├── Service/
+    │ │ └── FilterManager.php
     │ │ └── PropertyQueryParser.php
     │ │ └── RecommendationService.php
 ## **General Idea**
