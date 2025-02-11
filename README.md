@@ -48,8 +48,8 @@ The **Property Search Application** allows users to efficiently search for and v
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/my_project.git
-   cd my_project
+   https://github.com/alikoteich/real-estate-search.git
+   cd real-estate-search
 
 2. Install dependencies:
    ```bash
